@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="content">
+
+        <div class="box">
+            <div class="box-input-left">
+                <input type="number" name="top-left" class="input-left" value="0" min="0" onchange="checkEmptyField(topLeft[0])">
+                <input type="number" name="bottom-left" class="input-left" value="0" min="0" onchange="checkEmptyField(bottomLeft[0])">
+            </div>
+            <div class="box-example" id="box-example"></div>
+            <div class="box-input-right">
+                <input type="number" name="top-right" class="input-right" value="0" min="0" onchange="checkEmptyField(topRight[0])">
+                <input type="number" name="bottom-right" class="input-right" value="0" min="0" onchange="checkEmptyField(bottomRight[0])">
+            </div>
+
+        </div>
+
+        <div class="css">
+            <div class="css-header">
+                <button onclick="copyCss()">Copiar CSS</button>
+            </div>
+            <div class="css-content">
+                <textarea spellcheck="false" name="txtCss" id="txtCss" cols="74" readonly=“true”></textarea>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
